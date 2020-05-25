@@ -1,0 +1,12 @@
+/.idea
+/ticket-jiutianda-service-interface/ticket-source-service-interface.iml
+/ticket-jiutianda-service-spring-boot/ticket-source-service-spring-boot.iml
+/ticket-jiutianda-service-interface/ticket-ipow-service-interface.iml
+/ticket-jiutianda-service-spring-boot/ticket-ipow-service-spring-boot.iml
+/ticket-jiutianda-service-spring-boot/.mvn
+/ticket-jiutianda-service.iml
+*.bak
+*.project
+*.settings
+*.classpath
+*/target
