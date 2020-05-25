@@ -14,6 +14,6 @@ public class Application extends SpringBootServletInitializer implements Command
     }
 
 	public void run(String... args) throws Exception {
-		System.out.println("ÏµÍ³Æô¶¯Íê³É£¡");
+		System.out.println("ç³»ç»Ÿå¯åŠ¨å®Œæˆï¼");
 	}
 }
