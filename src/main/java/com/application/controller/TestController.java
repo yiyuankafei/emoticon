@@ -8,7 +8,7 @@ public class TestController {
 	
 	@RequestMapping("/test")
 	public String test(String name) {
-		return "test-v3:" + name;
+		return "test-v3,hi:" + name;
 	}
 
 }
