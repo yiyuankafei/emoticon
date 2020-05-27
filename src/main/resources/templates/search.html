@@ -15,10 +15,6 @@ $(function(){
 			url:"/emoticon?keywords=" + $('#keywords').val(),
 	        type:"get",
 	        success:function (data) {
-	        	alert(data);
-	        	alert(data.code);
-	        	alert(data.content);
-	        	alert(data.content.list);
 	        	var list = data.content;
 	        	var htmlString = "";
 	        	$.each(list,function(){
