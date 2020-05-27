@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout/default}" xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="/js/jquery.js"></script>
+<script>
+$(function(){
+	
+	$('#searchButton').click(function(){
+		
+		$.ajax({
+			url:"/emoticon?keywords=" + $('#keywords').val(),
+	        type:"get",
+	        success:function (data) {
+	        	alert(data);
+	        	alert(data.code);
+	        	alert(data.content);
+	        	alert(data.content.list);
+	        	var list = data.content;
+	        	var htmlString = "";
+	        	$.each(list,function(){
+	        		htmlString = htmlString + '<img src="'+ this.url +'"/>'
+	    		})
+	    		$('#warpper').html(htmlString);
+	        }
+		})
+	})
+	
+})
+
+
+</script>
+<body>
+	<input type="text" id="keywords"></input>
+	<input type="button" value="搜索" id="searchButton"></input>
+	<div id="warpper"></div>
+		
+	</div>
+</body>
+</html>
